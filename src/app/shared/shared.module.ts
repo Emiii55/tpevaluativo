@@ -6,6 +6,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from '../app-routing.module';
+import {MatCardModule} from '@angular/material/card';
 //importamos los componentes que utilizaremos en el navbar y en el footer
 
 
@@ -22,7 +23,8 @@ import { AppRoutingModule } from '../app-routing.module';
     //importamos el approuting en shared para que el navegador acceda a todas las rutas del sitio web
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   exports: [
     NavbarComponent,
@@ -30,7 +32,8 @@ import { AppRoutingModule } from '../app-routing.module';
     //luego de declarlo, lo exporto para que otros componentes puedan acceder a ellos
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ]
 })
 export class SharedModule { }

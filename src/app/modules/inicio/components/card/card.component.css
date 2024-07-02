@@ -1,0 +1,20 @@
+.imagen {
+    width: 25%;
+    margin: 15px;
+}
+
+.card {
+    width: 30%;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.titulo {
+    color: red;
+}
+
+.descripcion {
+    background-color: black;
+    color: white;
+}
