@@ -37,6 +37,7 @@ export class CardComponent {
         descripcion: "Esquís freeride de última generación, diseñado en un perfecto equilibrio entre el carbono y el titanio para una flexión más dócil. Diseño unisex realizado por atletas del Freeride World Tour.",
         precio: "Precio: $700.000"
       },
+      /*
       {
         id: "",
         nombre: "Atomic Backland 95",
@@ -44,6 +45,7 @@ export class CardComponent {
         descripcion: "Esquís de hombre hechos para realizar freetouring, diseñado para ser ligero y obtener un descenso rápido, destacando su patín de 95mm.",
         precio: "Precio: $800.000"
       }
+        */
 
     ]
 
@@ -69,6 +71,7 @@ export class CardComponent {
         descripcion2: "Esquís de pista para hombres, una nueva generación de Dynastar que trae consigo una gran viabilidad sobre pistas y un gran control gracias a sus palas anchas y curvas.",
         precio2: "Precio: $700.000",
       },
+      /*
       {
         id2: "",
         nombre2: "Dynastar Tour 99 F-TEAM Open",
@@ -76,37 +79,39 @@ export class CardComponent {
         descripcion2: "Esquís freeride diseñados de forma sencilla para que se vuelvan mas accesibles, ayudando al bolsillo del comprador, con una pala resistente y ancha, aportando una gran estabilidad.",
         precio2: "Precio: $900.000",
       }
+        */
     ]
 
     this.productosesqui3 = [
       {
         id3: "",
-        nombre3: "Head Supershape E-Speed",
-        imagen3: "https://ski-shop.ch/media/image/02/2e/6d/Head-Supershape-e-Speed-2023-ski-shop-ch-1.jpg",
+        nombre3: "Rosignol Rally Bird 92",
+        imagen3: "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dwed2d8a30/images/large/RALML03_FCLRS04_RALLYBIRD_92_OPEN_SPX_12_METRIX_GW_B100_BLACK_01.jpg?sw=800",
         descripcion3: "Esquís diseñado para aquellos corredores de pista con experiencia, con su diseño que lo vuelve ágil y velóz, siendo perfecto para la pista.",
         precio3: "Precio: $120.000",
       },
       {
         id3: "",
-        nombre3: "Head Kore X 90 LYT-PR",
-        imagen3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-m2D4rg_7vLVCYZFhIa0URBQhIahWWJmmXg&s",
+        nombre3: "Rossignol Sender Free 110",
+        imagen3: "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw03f88d63/images/large/RAMMB01_FCMPA02_SENDER_FREE_110_OPEN_PIVOT_15_GW_B115_SENDER_SIGNATURE_RGB72DPI_01.jpg?sw=800",
         descripcion3: "Diseñado para esquiadores all mountain, su diseño permite alcanzar una gran velocidad y principalmente un estabilidad ideal para aquellos intrepidos.",
         precio3: "Precio: $700.000",
       },
       {
         id3: "",
-        nombre3: "Head Porsche 8 Series",
-        imagen3: "https://www.powder7.com/skis/202307/2024_Porsche_8_Series_main.jpg",
+        nombre3: "Rossignol Sender 104 TI Open",
+        imagen3: "https://www.rossignol.com/dw/image/v2/BJJZ_PRD/on/demandware.static/-/Sites-rossignol-catalog/default/dw103a67d3/images/large/RALMJ01_FCLWO08_SENDER_104_TI_OPEN_DARKLITE_12_BLACK_01.jpg?sw=800",
         descripcion3: "All mountain diseñado a mano, con unas curvas que permiten una mayor aceleración, acompañado de grandes palas que ayudan a frenar lo justo y necesario.",
         precio3: "Precio: $200.000",
       },
+      /*
       {
         id3: "",
         nombre3: "Head Shape V4",
         imagen3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRhiB9y0KeWivO3pQW3gILZc1gj17yaBvgg&s",
         descripcion3: "Esquís perfectos para aquellos que desean realizar una travesía por toda la montaña, pues su pala inclinada permite pasar por cualquier nieve, sumado a su gran velocidad y estabilidad.",
         precio3: "Precio: $500.000",
-      }
+      } */
     ]
 
   }

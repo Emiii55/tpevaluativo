@@ -7,11 +7,12 @@
     text-align: center;
 }
 
-.card {
+.card { 
     justify-content: center;
     margin-left: 30px;
     margin-top: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .titulo {
@@ -28,4 +29,10 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.tiitulo {
+    margin-top: 15px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
