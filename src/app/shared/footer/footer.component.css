@@ -1,3 +1,13 @@
+mat-grid-list{
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    /* CTRL + K + C padding-left: 5%; */
+    padding-left: 5%;
+}
+
 .fondo {
     background-color: rgb(0, 0, 0);
 }
@@ -9,7 +19,5 @@
 }
 
 .icono {
-    text-align: center;
     justify-content: center;
-    width: 3%;
 }

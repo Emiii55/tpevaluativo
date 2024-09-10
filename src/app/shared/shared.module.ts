@@ -8,6 +8,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
 
 //importamos los componentes que utilizaremos en el navbar y en el footer
 
@@ -27,7 +28,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule
   ],
   exports: [
     NavbarComponent,
@@ -37,7 +39,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatMenuModule
   ]
 })
 export class SharedModule { }

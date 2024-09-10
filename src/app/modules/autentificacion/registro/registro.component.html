@@ -1,1 +1,44 @@
-<p>registro works!</p>
+<div id="todo">
+    <div class="container" id="registro">
+        <div class="row">
+            <h1>Registrate</h1>
+            <i class="material-icons" style="font-size: 200px;">person</i>
+
+            <!-- Email del usuario -->
+            <mat-form-field>
+                <mat-label>Ingrese su email</mat-label>
+                <input [(ngModel)]="usuarios.email" matInput placeholder="ej: leomessi454@gmail.com">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+
+            <!-- Rol del usuario -->
+            <mat-form-field>
+                <mat-label>Rol</mat-label>
+                <select [(ngModel)]="usuarios.rol" matNativeControl required>
+                    <option value="adm">Administrador</option>
+                    <option value="vis">Visitante</option>
+                </select>
+            </mat-form-field>
+
+            <!-- Contraseña usuario -->
+            <mat-form-field>
+                <mat-label>Ingrese una contraseña</mat-label>
+                <input [(ngModel)]="usuarios.password" matInput [type]="hide ? 'password' : 'text'" #input minlength="6"
+                    required="6">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-hint alling="start">Mínimo:6/{{input.value.length}}</mat-hint>
+            </mat-form-field>
+        </div>
+        <!-- Botón para enviar a la base de datos -->
+         <button class="boton" mat-raised-button color="primary" (click)="registrar()">Registrar</button>
+    </div>
+
+    <div class="container" id="cambio">
+        <h3>¿Ya tenés una cuenta?</h3>
+        <button routerLink="/iniciosesion" id="cambiar">Iniciar sesión</button>
+    </div>
+
+</div>

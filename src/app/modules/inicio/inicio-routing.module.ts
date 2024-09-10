@@ -8,7 +8,7 @@ const routes: Routes = [
   }, //para que al inicializar muestre este componente primero
   {
     path:"inicio",component:InicioComponent
-  }//ruta para el componente inicio
+  } //ruta para el componente inicio
 ];
 
 @NgModule({

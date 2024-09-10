@@ -3,9 +3,13 @@
     <mat-icon>menu</mat-icon>
   </button>
 
-  <button mat-stroked-button class="boton1">Inicio</button>
+  <button mat-stroked-button class="boton1" routerLink="/inicio">Inicio</button>
   <button mat-stroked-button class="boton2">Productos</button>
-  <button mat-stroked-button class="boton3">Autentificación</button>
+  <button mat-stroked-button class="boton3" [matMenuTriggerFor]="autentificacion">Autentificación</button>
+  <mat-menu #autentificacion="matMenu">
+    <button mat-menu-item routerLink="/registro">Registro</button>
+    <button mat-menu-item routerLink="/iniciosesion">Inicio de Sesión</button>
+  </mat-menu>
 
   <span class="espacio"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">

@@ -11,7 +11,14 @@ const routes: Routes = [
 {
   path:"",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)
   //Realizamos la ruta con carga perezosa, renderizamos todo el modulo.
+},
+{
+  path:"",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)
+},
+{
+  path:"",loadChildren:()=>import('./modules/productos/productos.module').then(m=>m.ProductosModule)
 }
+
 ];
 
 @NgModule({
