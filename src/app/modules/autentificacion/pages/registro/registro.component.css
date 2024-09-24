@@ -1,1 +1,11 @@
-/* Estilo especifico del registro */
+.container{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton{
+    width: 120px;
+    margin: auto;
+}
