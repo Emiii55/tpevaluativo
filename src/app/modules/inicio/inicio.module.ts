@@ -7,12 +7,14 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 //inicio para las vistas, ruteo todos los componentes
 
 @NgModule({
   declarations: [
     CardComponent,
-    InicioComponent
+    InicioComponent,
+    CarruselComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     InicioComponent,
     MatButtonModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    CarruselComponent
   ]
 })
 export class InicioModule { }

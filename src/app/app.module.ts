@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 //componentes globales
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+
 //importacion de las herramientas de la base de datos
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
