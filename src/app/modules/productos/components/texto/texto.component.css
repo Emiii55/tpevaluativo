@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Teko:wght@300..700&display=swap');
+
+
+p {
+    font-family: "Edu QLD Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}

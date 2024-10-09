@@ -1,21 +1,72 @@
+<!--NAVBAR VIEJO
 <mat-toolbar class="fondo">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
 
   <button mat-stroked-button class="boton1" routerLink="/inicio">Inicio</button>
-  <button mat-stroked-button class="boton2">Productos</button>
+  <button mat-stroked-button class="boton2" routerLink="/prod">Productos</button>
   <button mat-stroked-button class="boton3" [matMenuTriggerFor]="autentificacion">Autentificación</button>
   <mat-menu #autentificacion="matMenu">
     <button mat-menu-item routerLink="/registro">Registro</button>
     <button mat-menu-item routerLink="/iniciosesion">Inicio de Sesión</button>
   </mat-menu>
+</mat-toolbar>
+-->
 
-  <span class="espacio"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
+
+
+
+
+
+<mat-toolbar class="fondo">
+  <span>
+    <img src="../assets/cap1.png" class="logo">
+  </span>
+  <!-- Menú desplegable para pantalla menor a 700px -->
+  <button id="menuSecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion">
+    <mat-icon>menu</mat-icon>
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+
+  <mat-menu #seccion="matMenu">
+    <button mat-menu-item routerLink="/inicio">Inicio</button>
+    <button mat-menu-item [matMenuTriggerFor]="producto">Productos</button>
+    <mat-menu #producto="matMenu">
+      <button mat-menu-item routerLink="/prod">General</button>
+      <button mat-menu-item routerLink="/esq">Esquis</button>
+      <button mat-menu-item routerLink="/snow">Snowboard</button>
+      <button mat-menu-item routerLink="/ind">Indumentaria</button>
+    </mat-menu>
+    <button mat-menu-item [matMenuTriggerFor]="autentificacion">Autentificación</button>
+    <mat-menu #autentificacion="matMenu">
+      <button mat-menu-item routerLink="/registro">Registro</button>
+      <button mat-menu-item routerLink="/iniciosesion">Inicio de Sesión</button>
+    </mat-menu><!-- Menu desplegable productos y autentificacion -->
+  </mat-menu>
+
+  <!--
+Se van a mostrar cuando la pantalla sea mayor a 700px
+-->
+  <button id="menuInicio" mat-stroked-button routerLink="/inicio">Inicio</button>
+  <button id="menuProducto" mat-stroked-button [matMenuTriggerFor]="producto">Productos</button>
+  <mat-menu #producto="matMenu"><!-- Menu desplegable PRODUCTOS -->
+    <button mat-menu-item routerLink="/prod">General</button>
+    <button mat-menu-item routerLink="/esq">Esquis</button>
+    <button mat-menu-item routerLink="/snow">Snowboard</button>
+    <button mat-menu-item routerLink="/ind">Indumentaria</button>
+  </mat-menu>
+
+  <!--
+    parte autentificacion 
+    -->
+    <span class="example-spacer"></span>
+
+    <!-- Menú desplegable para autentificacion -->
+    <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+    <mat-menu #usuario="matMenu">
+        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
+        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/iniciosesion">Iniciar Sesión</button>
+        <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
+    </mat-menu>
+
 </mat-toolbar>

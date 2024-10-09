@@ -5,12 +5,17 @@ import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+
+// ACCEDEMOS A TODAS LAS RUTAS DEL PROYECTO
 import { AppRoutingModule } from '../app-routing.module';
+
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 
 //importamos los componentes que utilizaremos en el navbar y en el footer
+
+
 
 
 @NgModule({
