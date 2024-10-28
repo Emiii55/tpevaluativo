@@ -61,6 +61,7 @@ mat-tab-group{
     transition: transform 0.3s ease, background-color 0.3s ease; /* Suavidad en las transiciones */
     border-radius: 8px; /* Bordes ligeramente redondeados */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+    margin: 15px; /* Margen para separar las cards */
 }
 
 .example-card:hover {

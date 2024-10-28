@@ -9,6 +9,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { CatalogoComponent } from './components/catalogo/catalogo.component';
+import { Carrusel2Component } from './components/carrusel2/carrusel2.component';
 //inicio para las vistas, ruteo todos los componentes
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
     CardComponent,
     InicioComponent,
     CarruselComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    Carrusel2Component
   ],
   imports: [
     CommonModule,

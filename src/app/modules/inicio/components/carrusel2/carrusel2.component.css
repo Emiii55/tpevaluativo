@@ -1,0 +1,25 @@
+/* Contenedor del carrusel que ocupa todo el ancho */
+.carousel-container {
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+  }
+  
+  /* Carrusel con un ancho más pequeño y altura ajustada */
+  .carousel {
+    width: 100%; /* Ajusta el porcentaje del ancho según lo necesites */
+    max-width: 1400px; /* Ancho máximo para el carrusel */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 270x; /* Ajusta la altura según lo necesites */
+    background-color: #ddd;
+    text-align: center;
+    line-height: 300px; /* Centra el texto verticalmente */
+    font-size: 2rem;
+  }
+  
