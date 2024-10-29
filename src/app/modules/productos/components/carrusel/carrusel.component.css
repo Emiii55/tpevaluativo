@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+QLD+Beginner:wght@400..700&family=Teko:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 /* 
  Contenedor del video y contenido
 .video-container {
@@ -126,8 +128,7 @@ video {
 
 .content {
   position: relative;
-  background-color: black;
-  /* Fondo negro para el contenido */
+  background: linear-gradient(to bottom, #1e1d1dda, rgb(0, 0, 0));
   color: white;
   /* Texto blanco para buen contraste */
   padding: 50px;
@@ -142,12 +143,13 @@ h1 {
   font-weight: 300;
   font-style: normal;
   text-align: center;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 p {
-  font-size: 50px;
-  margin-bottom: 10px;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 300;
+  font-family: "Kavivanar", cursive;
+  font-weight: 100;
   font-style: normal;
+  font-size: 19px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }

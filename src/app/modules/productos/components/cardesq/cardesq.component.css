@@ -1,0 +1,44 @@
+.card {
+    position: relative;
+    width: 300px; /* Tamaño de la tarjeta */
+    height: 400px; /* Ajusta según el tamaño deseado */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* La imagen mantiene su proporción */
+    max-height: 100%; /* Evita que sea demasiado grande */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el mouse */
+}
+
+.card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+.card:hover .card-info {
+    opacity: 1; /* Muestra la información al hacer hover */
+}
+

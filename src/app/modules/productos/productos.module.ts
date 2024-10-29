@@ -8,6 +8,7 @@ import { EsquiComponent } from './pages/esqui/esqui.component';
 import { SnowboardComponent } from './pages/snowboard/snowboard.component';
 import { IndumentariaComponent } from './pages/indumentaria/indumentaria.component';
 import { TextoComponent } from './components/texto/texto.component';
+import { CardesqComponent } from './components/cardesq/cardesq.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TextoComponent } from './components/texto/texto.component';
     EsquiComponent,
     SnowboardComponent,
     IndumentariaComponent,
-    TextoComponent
+    TextoComponent,
+    CardesqComponent
   ],
   imports: [
     CommonModule,

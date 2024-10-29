@@ -33,6 +33,7 @@ mat-tab-group{
 .titulo {
     justify-content: center;
     text-align: center;
+    margin-right: 45px;
     color: red;
 }
 
@@ -58,15 +59,15 @@ mat-tab-group{
     position: relative;
     overflow: hidden;
     background-color: #f5f5f5; /* Color de fondo inicial */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Suavidad en las transiciones */
+    transition: transform 0.6s ease, background-color 0.6s ease; /* Suavidad en las transiciones */
     border-radius: 8px; /* Bordes ligeramente redondeados */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de profundidad */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Sombra para darle un efecto de profundidad */
     margin: 15px; /* Margen para separar las cards */
 }
 
 .example-card:hover {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
+    transform: scale(0.98); /* Efecto de agrandamiento al pasar el mouse */
     background-color: #e0e0e0; /* Cambiar el color de fondo al pasar el mouse */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra para darle más relieve */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Aumentar la sombra para darle más relieve */
 }
 
