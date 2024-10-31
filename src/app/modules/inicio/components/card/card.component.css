@@ -1,8 +1,10 @@
-mat-tab-group{
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+mat-tab-group {
     display: flex;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: center;
 }
@@ -15,12 +17,12 @@ mat-tab-group{
     display: block;
     text-align: center;
     justify-content: center;
-} 
+}
 
 
 
 
-.card { 
+.card {
     justify-content: center;
     margin-left: 30px;
     margin-top: 20px;
@@ -50,24 +52,35 @@ mat-tab-group{
     */
 
 .tiitulo {
-    margin-top: 15px;
+    font-family: "Teko", sans-serif;
+    font-size: 45px;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 35px;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 .example-card {
     position: relative;
     overflow: hidden;
-    background-color: #f5f5f5; /* Color de fondo inicial */
-    transition: transform 0.6s ease, background-color 0.6s ease; /* Suavidad en las transiciones */
-    border-radius: 8px; /* Bordes ligeramente redondeados */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); /* Sombra para darle un efecto de profundidad */
-    margin: 15px; /* Margen para separar las cards */
+    background-color: #f5f5f5;
+    /* Color de fondo inicial */
+    transition: transform 0.6s ease, background-color 0.6s ease;
+    /* Suavidad en las transiciones */
+    border-radius: 8px;
+    /* Bordes ligeramente redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    /* Sombra para darle un efecto de profundidad */
+    margin: 15px;
+    /* Margen para separar las cards */
 }
 
 .example-card:hover {
-    transform: scale(0.98); /* Efecto de agrandamiento al pasar el mouse */
-    background-color: #e0e0e0; /* Cambiar el color de fondo al pasar el mouse */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Aumentar la sombra para darle más relieve */
+    transform: scale(0.98);
+    /* Efecto de agrandamiento al pasar el mouse */
+    background-color: #e0e0e0;
+    /* Cambiar el color de fondo al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    /* Aumentar la sombra para darle más relieve */
 }
-
